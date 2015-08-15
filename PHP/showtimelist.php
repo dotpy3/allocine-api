@@ -43,7 +43,7 @@ if (isset($_GET['zip']))
 		&& isset($_GET['long'])
 		&& isset($_GET['radius']))
 {
-	foreach ($i in array('lat','long','radius')) $params[$i] = $_GET[$i];
+	foreach (array('lat','long','radius') as $i) $params[$i] = $_GET[$i];
 	$result = $allocine->showTimeList($params);
 }
 	elseif (isset($_GET['theaters']))
