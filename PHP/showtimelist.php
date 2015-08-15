@@ -55,6 +55,7 @@ if (isset($_GET['zip']))
 {
 	$params['location'] = $_GET['location'];
 	$result = $allocine->showTimeList($params);
+	if (!isset($_GET['movie'])) $result = "{'feed': 'notFound'}";
 }
 	else
 {
