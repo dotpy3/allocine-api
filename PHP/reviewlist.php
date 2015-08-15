@@ -11,6 +11,6 @@ require_once(__DIR__.'/header.php');
 
 (isset($_GET['code']) && isset($_GET['filter'])) ?
 	$result = $allocine->reviewList($_GET['code'], $_GET['filter'])
-	: $result = "{'movie': 'notFound'}";
+	: $result = "{'feed': 'incorrectParameter'}";
 
 echo $result;

@@ -86,4 +86,16 @@ class Allocine
 
         return $response;
     }
+
+    public function showTimeList($paramsArray)
+    {
+        // building params
+        $paramsArray['format'] = 'json';
+        $paramsArray['partner'] = $this->_partner_key;
+
+        // request
+        $response = $this->_do_request('showtimelist', $paramsArray);
+
+        return $response;
+    }
 }
