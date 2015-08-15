@@ -68,4 +68,22 @@ class Allocine
 
         return $response;
     }
+
+    public function reviewList($code, $filter)
+    {
+        // building params
+        $params = array(
+            'partner' => $this->_partner_key,
+            'type' => 'movie',
+            'code' => $code,
+            'filter' => $filter,
+            'count' => '30',
+            'format' => 'json'
+            );
+
+        // request
+        $response = $this->_do_request('reviewlist', $params);
+
+        return $response;
+    }
 }
