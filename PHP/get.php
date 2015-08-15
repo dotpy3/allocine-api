@@ -1,5 +1,7 @@
 <?php
 
+header('Content-Type: application/json');
+
 require_once(__DIR__.'/allocine.class.php');
 
 define('ALLOCINE_PARTNER_KEY', '100043982026');
