@@ -1,6 +1,6 @@
 <?php
 
-header('Content-Type: application/json');
+header('Content-Type: application/json; charset=utf-8');
 
 define('ALLOCINE_PARTNER_KEY', '100043982026');
 define('ALLOCINE_SECRET_KEY', '29d185d98c984a359e6e6f26a0474269');
